@@ -1,0 +1,17 @@
+{
+  "name": "esm-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node node_modules/mocha/lib/cli/cli.js",
+    "test:iitm": "node --loader import-in-the-middle/hook.mjs node_modules/mocha/lib/cli/cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "import-in-the-middle": "^1.4.2",
+    "mocha": "^10.2.0"
+  }
+}
